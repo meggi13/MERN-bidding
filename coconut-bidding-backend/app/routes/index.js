@@ -71,7 +71,4 @@ rootRoute.get("/users/random/complaints", async (req, res) => {
  * API for user login
  */
 rootRoute.post("/login", usersController.login);
-// rootRoute.get("/employees/:employeeId", usersController.getEmployeeById);
-// rootRoute.put("/employees/:employeeId", usersController.updateEmployee);
-// rootRoute.delete("/employees/:employeeId", usersController.deleteEmployee);
 module.exports = rootRoute;
