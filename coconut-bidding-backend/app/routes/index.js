@@ -21,7 +21,9 @@ rootRoute.get("/status", (req, res, next) => {
 rootRoute.post("/users", usersController.createUser);
 rootRoute.get("/users", usersController.getUsers);
 rootRoute.get('/users/:id', usersController.getUserById);
-
+rootRoute.delete("/users/:id", usersController.deleteUserByAdmin);
+rootRoute.post('/users/forgot-password', usersController.forgotPassword);
+rootRoute.post('/users/reset-password', usersController.resetPassword);
 
 /**
  * API for products
@@ -72,7 +74,4 @@ rootRoute.get("/users/random/complaints", async (req, res) => {
  * API for user login
  */
 rootRoute.post("/login", usersController.login);
-// rootRoute.get("/employees/:employeeId", usersController.getEmployeeById);
-// rootRoute.put("/employees/:employeeId", usersController.updateEmployee);
-// rootRoute.delete("/employees/:employeeId", usersController.deleteEmployee);
 module.exports = rootRoute;
