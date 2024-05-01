@@ -3,6 +3,6 @@ In backend,
 You need create the a .env file and save all the required data
 then run the command npm run start to start the backend
 
-To start frontend run the command npm run
+To start frontend run the command npm start
 
 on starting the backend and frontend the application will run successfully.
